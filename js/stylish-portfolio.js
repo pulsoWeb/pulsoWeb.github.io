@@ -40,6 +40,17 @@
     }
   });
 
+    //boton-titulo-contactos
+
+    $(document).scroll(function () {
+        var scrollDistance = $(this).scrollTop();
+        if (scrollDistance > 100) {
+            $('.titulo-contactos').fadeOut();
+        } else {
+            $('.titulo-contactos').fadeIn();
+        }
+    });
+
 })(jQuery); // End of use strict
 
 // Disable Google Maps scrolling
