@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\css",
-    "\\img"
+    "\\img",
+    "\\js"
   ],
-  "SelectedNode": "\\css\\stylish-portfolio.css",
+  "SelectedNode": "\\css\\default.css",
   "PreviewInSolutionExplorer": false
 }
