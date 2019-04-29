@@ -227,9 +227,12 @@
                     <a target="_blank" class="social-link rounded-circle text-white mr-3" href="https://www.messenger.com/t/321364208522416">
                         <i class="fab fa-facebook-messenger"></i>
                     </a>
-                </li> <!--href="https://web.whatsapp.com/send?phone=+5493445654576&text="-->
+                </li>
                 <li class="list-inline-item">
-                    <a target="_blank" class="social-link rounded-circle text-white mr-3" href="https://api.whatsapp.com/send?phone=+5493445654576">
+                    <a target="_blank" style="display:none" id="wspMovil" class="social-link rounded-circle text-white mr-3" href="https://api.whatsapp.com/send?phone=+5493445654576">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a target="_blank" style="display:none" id="wspWeb" class="social-link rounded-circle text-white mr-3" href="https://web.whatsapp.com/send?phone=+5493445654576">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </li>
@@ -260,5 +263,14 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Custom scripts for this template -->
     <script src="js/stylish-portfolio.js"></script>
+
+    <script>
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            $("#wspMovil").show();
+        }
+        else {
+            $("#wspWeb").show();
+        }
+    </script>
 </body>
 </html>
